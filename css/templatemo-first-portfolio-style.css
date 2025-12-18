@@ -522,8 +522,11 @@ strong {
   position: absolute;
   z-index: 22;
   top: 0;
+  left: 0;
   width: 100%;
-  min-width: 550px;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
 }
 
 .hero svg {
@@ -994,9 +997,8 @@ strong {
     height: 400px;
   }
 
-  .hero-image {
-    min-width: 650px;
-  }
+ 
+
   
   .hero-title,
 	.hero h2 {
@@ -1088,6 +1090,10 @@ strong {
     margin-bottom: 120px;
   }
 
+  .hero-image-wrap {
+    top: 0;
+  }
+
   .about-thumb {
     padding-right: 0;
     padding-left: 0;
@@ -1139,6 +1145,10 @@ strong {
     margin-right: 12px;
     margin-left: 12px;
   }
+   .hero-image-img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1179,6 +1189,12 @@ strong {
     width: 300px;
     height: 300px;
   }
+   .hero-image-img-fluid {
+    
+    max-width: 100%;
+    height: auto;
+  }
+
 
   .hero-image {
     min-width: inherit;
