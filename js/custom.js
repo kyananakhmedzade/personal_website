@@ -8,6 +8,11 @@
       $('.preloader').fadeOut(1000); // set duration in brackets    
     });
 
+    // STICKY NAVBAR
+    $(document).ready(function(){
+      $(".navbar").sticky({topSpacing:0});
+    });
+
     // CUSTOM LINK
     $('.custom-link').click(function(){
     var el = $(this).attr('href');
