@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ page.title }}</title>
+        <link rel="icon" type="image/jpeg" href="{{ '/images/favicon1.jpeg' | relative_url }}">
+        <link href="{{ '/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
+        <link href="{{ '/css/templatemo-first-portfolio-style.css' | relative_url }}" rel="stylesheet">
+    </head>
+    <body>
+        <section class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        {{ content }}
+                        
+                        <br>
+                        <a href="{{ '/' | relative_url }}" class="custom-btn">Back to Home</a>
+                        
+                        <div class="mt-5">
+                            <strong class="site-footer-title d-block mb-3">Stay connected</strong>
+                            {% include social-icons.html %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        {% include footer.html %}
+    </body>
+</html>

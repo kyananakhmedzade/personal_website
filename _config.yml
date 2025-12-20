@@ -1,0 +1,28 @@
+# Site settings
+title: Kanan Ahmadzada
+description: Personal portfolio website
+author: Kanan Ahmadzada
+email: kyanan.akhmedzade@mail.ru
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
+
+# Social links
+social:
+  github: https://github.com/kyananakhmedzade
+  instagram: https://www.instagram.com/kyanannn13/
+  codecademy: https://www.codecademy.com/profiles/kahmadzada23890
